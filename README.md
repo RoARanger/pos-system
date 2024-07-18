@@ -13,6 +13,7 @@
     <li><a href="#running-the-application">Running the Application</a></li>
     <li><a href="#running-tests">Running Tests</a></li>
     <li><a href="#api-descriptions">API Descriptions</a></li>
+    <li><a href="#future-enhancements">Future Enhancements</a></li>
   </ul>
 
   <h2 id="getting-started">Getting Started</h2>
