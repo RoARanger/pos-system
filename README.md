@@ -115,5 +115,16 @@
     <li><strong>Link Upsell Product:</strong> This endpoint links an upsell product to an existing product. It accepts the IDs of the main product and the upsell product, and creates a link between them in the database.</li>
     <li><strong>Retrieve Upsell Products:</strong> This endpoint retrieves all upsell products linked to a specific product. It returns a list of upsell products associated with the given product ID.</li>
   </ul>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+  <p>To ensure the system can be easily expanded in the future, several potential enhancements have been considered:</p>
+  <ul>
+    <li><strong>Discount Management:</strong> Implementing a system to manage discounts and promotions that can be applied to transactions.</li>
+    <li><strong>Inventory Management:</strong> Adding features for managing inventory, including automated stock replenishment alerts and detailed inventory reports.</li>
+    <li><strong>Customer Management:</strong> Introducing a customer relationship management (CRM) module to track customer details, purchase history, and preferences.</li>
+    <li><strong>Reporting and Analytics:</strong> Developing advanced reporting and analytics tools to provide insights into sales performance, customer behavior, and product trends.</li>
+    <li><strong>Multi-language Support:</strong> Expanding the system to support multiple languages for a more inclusive user experience.</li>
+  </ul>
+  <p>The current architecture, using Fastify and Sequelize, is designed to be modular and scalable, making it easier to integrate these additional features in the future.</p>
 </body>
 </html>
