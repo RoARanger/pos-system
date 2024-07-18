@@ -2,7 +2,6 @@
 <html>
 <body>
   <h1>Point of Sales System</h1>
-  <img src="https://via.placeholder.com/100" alt="Point of Sales System">
 
   <h2>Overview</h2>
   <p>This is a backend application for a Point of Sales system built with TypeScript, Node.js, and Fastify. It includes functionalities for user authentication, product management, upsell product management, and sales transactions. Sequelize is used as the ORM for MySQL database interactions.</p>
@@ -92,29 +91,29 @@
   <h2 id="api-descriptions">API Descriptions</h2>
   <h3>User Authentication</h3>
   <ul>
-    <li><strong>Sign Up:</strong> This endpoint creates a new user account.</li>
-    <li><strong>Login:</strong> This endpoint logs in an existing user.</li>
+    <li><strong>Sign Up:</strong> This endpoint creates a new user account. It accepts an email and password, hashes the password for security, and generates a JWT token for authentication.</li>
+    <li><strong>Login:</strong> This endpoint logs in an existing user. It verifies the user's credentials, checks the hashed password, and generates a JWT token for authentication.</li>
   </ul>
 
   <h3>Product Management</h3>
   <ul>
-    <li><strong>Create Product:</strong> This endpoint creates a new product.</li>
-    <li><strong>Retrieve All Products:</strong> This endpoint retrieves all products.</li>
-    <li><strong>Update Product:</strong> This endpoint updates an existing product.</li>
-    <li><strong>Delete Product:</strong> This endpoint deletes an existing product.</li>
+    <li><strong>Create Product:</strong> This endpoint creates a new product. It accepts details like name, price, description, and quantity of the product and stores it in the database.</li>
+    <li><strong>Retrieve All Products:</strong> This endpoint retrieves all products from the database. It returns a list of products with their details.</li>
+    <li><strong>Update Product:</strong> This endpoint updates an existing product. It accepts the product ID and updated details, and then updates the product in the database.</li>
+    <li><strong>Delete Product:</strong> This endpoint deletes an existing product. It accepts the product ID and removes the product from the database.</li>
   </ul>
 
   <h3>Transaction Management</h3>
   <ul>
-    <li><strong>Create Transaction:</strong> This endpoint creates a new transaction with details of products sold and quantities.</li>
-    <li><strong>Retrieve All Transactions:</strong> This endpoint retrieves all transactions.</li>
-    <li><strong>Retrieve Specific Transaction:</strong> This endpoint retrieves a specific transaction by ID along with the associated products and upsell products.</li>
+    <li><strong>Create Transaction:</strong> This endpoint creates a new transaction with details of products sold and their quantities. It checks the availability of the products, reduces their quantities accordingly, and adds the transaction details to the database. If the product quantity is insufficient, it returns an error.</li>
+    <li><strong>Retrieve All Transactions:</strong> This endpoint retrieves all transactions. It returns a list of transactions with their details, including the associated products and upsell products.</li>
+    <li><strong>Retrieve Specific Transaction:</strong> This endpoint retrieves a specific transaction by ID along with the associated products and upsell products. It provides detailed information about the transaction.</li>
   </ul>
 
   <h3>Upsell Product Management</h3>
   <ul>
-    <li><strong>Link Upsell Product:</strong> This endpoint links an upsell product to an existing product.</li>
-    <li><strong>Retrieve Upsell Products:</strong> This endpoint retrieves all upsell products linked to a specific product.</li>
+    <li><strong>Link Upsell Product:</strong> This endpoint links an upsell product to an existing product. It accepts the IDs of the main product and the upsell product, and creates a link between them in the database.</li>
+    <li><strong>Retrieve Upsell Products:</strong> This endpoint retrieves all upsell products linked to a specific product. It returns a list of upsell products associated with the given product ID.</li>
   </ul>
 </body>
 </html>
