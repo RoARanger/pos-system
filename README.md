@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Point of Sales System</title>
+  <h1>Point of Sales System</h1>
 </head>
 <body>
   <h1>Point of Sales System</h1>
@@ -31,8 +31,9 @@
   <ol>
     <li>Clone the repository:
       <pre>
-        <code>git clone <repository_url>
-cd <repository_name>
+        <code>
+          git clone repository_url
+          cd repository_name
         </code>
       </pre>
     </li>
@@ -43,8 +44,7 @@ cd <repository_name>
     </li>
     <li>Install MySQL:
       <pre>
-        <code>- <strong>Windows:</strong> Download the MySQL Installer from the <a href="https://dev.mysql.com/downloads/installer/">official MySQL website</a> and follow the installation instructions.
-        </code>
+        <strong>Windows:</strong> Download the MySQL Installer from the <a href="https://dev.mysql.com/downloads/installer/">official MySQL website</a> and follow the installation instructions.
       </pre>
     </li>
     <li>Set up the database:
@@ -54,11 +54,12 @@ cd <repository_name>
     </li>
     <li>Create a <code>.env</code> file in the root directory and add your database configuration:
       <pre>
-        <code>DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=pos_db
-JWT_SECRET=your_jwt_secret
+        <code>
+          DB_HOST=localhost
+          DB_USER=root
+          DB_PASSWORD=yourpassword
+          DB_NAME=pos_db
+          JWT_SECRET=your_jwt_secret
         </code>
       </pre>
     </li>
@@ -67,12 +68,13 @@ JWT_SECRET=your_jwt_secret
   <h2 id="environment-variables">Environment Variables</h2>
   <p>Ensure the following environment variables are set in your <code>.env</code> file:</p>
   <pre>
-    <code>DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=pos_db
-JWT_SECRET=your_jwt_secret
-PORT=3000
+    <code>
+      DB_HOST=localhost
+      DB_USER=root
+      DB_PASSWORD=yourpassword
+      DB_NAME=pos_db
+      JWT_SECRET=your_jwt_secret
+      PORT=3000
     </code>
   </pre>
 
