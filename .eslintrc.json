@@ -1,0 +1,11 @@
+{
+  "extends": ["standard"],
+  "plugins": ["import", "node", "promise", "standard"],
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 11
+  }
+}
