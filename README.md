@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <h1>Point of Sales System</h1>
-</head>
 <body>
   <h1>Point of Sales System</h1>
   <img src="https://via.placeholder.com/100" alt="Point of Sales System">
